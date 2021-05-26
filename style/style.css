@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Formato en titulos y texto*/
+h2 {
+  color: DimGray;
+  text-align: center;
+  text-shadow: -6px 8px 3px #bdacbd;
+  margin: 70px;
+}
+
+#contenido h2 {
+  text-decoration: underline;
+  font-family: cursive;
+  text-shadow: none;
+}
+
+#contenido .servicios p span {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+
+.bienvenidos {
+  font-weight: bold;
+}
+
+.seccion1 {
+  background: url(../images/footer.png) no-repeat center;
+  background-size: cover;
+}
+
+/*BEM*/
+.seccion4 {
+  padding: 20px;
+}
+
+.seccion4__titulo {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.link__2 {
+  width: 100%;
+  height: auto;
+}
+
+.link__3 {
+  width: 450px;
+  height: auto;
+}
+
+.cont__4 {
+  font-weight: bold;
+}
+
+.cont__3 {
+  letter-spacing: 2px;
+}
+
+.link_5, .link_5_1, .link_5_2, .link_5_3 {
+  width: 450px;
+}
+
+.titulo1 {
+  color: blue;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.titulo2 {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.titulo3 {
+  color: green;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.slider-1 img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 70vh;
+  width: 100%;
+  background: url(../images/fondo_slider.png) no-repeat center;
+  background-size: 1150px auto;
+}
+
+.slider-2 img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 70vh;
+  width: 100%;
+  background: url(../images/fondo_slider.png) no-repeat center;
+  background-size: 1150px auto;
+}
+
+.slider-3 img {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  height: 70vh;
+  width: 100%;
+  background: url(../images/fondo_slider.png) no-repeat center;
+  background-size: 1150px auto;
+}
+
+.navegador {
+  background-color: transparent !important;
+}
+
+.opcNav {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: #f08080;
+}
+
+.cardprint {
+  width: 100%;
+}
+
+.cardprint .carduno {
+  width: 100%;
+  height: auto;
+}
+
+.cardprint .imgPresent {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.erikaSecImag div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.erikaSecImag div {
+  -webkit-transition: -webkit-transform 3s;
+  transition: -webkit-transform 3s;
+  transition: transform 3s;
+  transition: transform 3s, -webkit-transform 3s;
+}
+
+.erikaSecImag .galeria .galeria1 div:hover {
+  cursor: pointer;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.listaTabla {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: left;
+}
+
+.iconoTabla {
+  border: 1px solid #ddd;
+  width: 50px;
+}
+
+.encabezadosTabla {
+  color: black;
+  text-align: left;
+}
+
+thead tr th {
+  padding: 0 10px;
+  text-decoration: underline;
+}
+
+.contenido1 {
+  background-color: peachpuff;
+}
+
+/*CONTACTO */
+#formulario {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#formulario form fieldset {
+  border-style: dashed;
+  border-color: DimGray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* formato Footer */
+.footer p span {
+  font-weight: bold;
+}
+
+/* Bootstrap */
+.margen {
+  margin-right: 50px;
+}
+/*# sourceMappingURL=style.css.map */

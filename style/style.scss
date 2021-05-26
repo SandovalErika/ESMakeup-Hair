@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// /*OPERACIONES*/
+$ancho: 450px;
+$margen: 10px;
+$relleno: 20px;
+
+/* Formato en titulos y texto*/
+h2 {
+  color: DimGray;
+  text-align: center;
+  text-shadow: -6px 8px 3px #bdacbd;
+  margin: 70px;
+}
+#contenido h2 {
+  text-decoration: underline;
+  font-family: cursive;
+  text-shadow: none;
+}
+#contenido .servicios p span {
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.bienvenidos {
+  font-weight: bold;
+}
+
+// Fondo de pantalla
+// Mixins
+
+@mixin fondo($fondo) {
+  background: $fondo no-repeat center;
+  background-size: cover;
+}
+.seccion1 {
+  @include fondo(url(../images/footer.png));
+}
+
+/*BEM*/
+
+.seccion4 {
+  padding: $relleno;
+}
+
+.seccion4__titulo {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.link__2 {
+  width: 100%;
+  height: auto;
+  // justify-content: center;
+}
+
+.link__3 {
+  width: $ancho;
+  height: auto;
+}
+
+.cont__4 {
+  font-weight: bold;
+}
+
+.cont__3 {
+  letter-spacing: 2px;
+}
+
+// INDEX- Inicio
+// Slider- Titulos
+// Extend
+
+.link_5 {
+  width: $ancho;
+}
+
+.link_5_1 {
+  @extend .link_5;
+}
+.link_5_2 {
+  @extend .link_5;
+}
+.link_5_3 {
+  @extend .link_5;
+}
+
+// Maps
+$titulos: (
+  titulo1: blue,
+  titulo2: red,
+  titulo3: green,
+);
+
+@each $titulo, $color in $titulos {
+  .#{$titulo} {
+    color: $color;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+// Slider -Imagenes
+// Bucle
+
+@for $i from 1 through 3 {
+  .slider-#{$i} img {
+    object-fit: scale-down;
+    height: 70vh;
+    width: 100%;
+    background: url(../images/fondo_slider.png) no-repeat center;
+    background-size: 1150px auto;
+  }
+}
+
+// Navegador
+
+.navegador {
+  background-color: transparent !important;
+}
+
+.opcNav {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: #f08080;
+}
+
+// Card-Presentacion
+.cardprint {
+  width: 100%;
+
+  .carduno {
+    width: 100%;
+    height: auto;
+  }
+
+  .imgPresent {
+    width: 100%;
+    padding: 10px;
+
+    justify-content: center;
+  }
+}
+
+//GALERIA
+// Formato de imagenes
+
+.erikaSecImag div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.erikaSecImag div {
+  transition: transform 3s;
+}
+
+.erikaSecImag .galeria .galeria1 div:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+
+// PRODUCTOS Y SERVICIOS
+// Formato en tabla
+
+.listaTabla {
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+tbody td {
+  padding: 10px;
+  text-align: left;
+}
+
+.iconoTabla {
+  border: 1px solid #ddd;
+  width: 50px;
+}
+
+.encabezadosTabla {
+  color: black;
+  text-align: left;
+}
+
+thead tr th {
+  padding: 0 10px;
+  text-decoration: underline;
+}
+
+.contenido1 {
+  background-color: rgb(255, 218, 185);
+}
+/*CONTACTO */
+// Bordes formulario
+
+#formulario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario form fieldset {
+  border-style: dashed;
+  border-color: DimGray;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: $relleno;
+  margin: $margen * 2;
+}
+
+/* formato Footer */
+
+.footer p span {
+  font-weight: bold;
+}
+
+/* Bootstrap */
+.margen {
+  margin-right: ($margen * 3)+20;
+}
