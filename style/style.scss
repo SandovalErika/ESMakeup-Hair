@@ -120,6 +120,7 @@ $titulos: (
     width: 100%;
     background: url(../images/fondo_slider.png) no-repeat center;
     background-size: 1150px auto;
+    background-size: cover;
   }
 }
 
@@ -137,24 +138,32 @@ $titulos: (
   background-color: #f08080;
 }
 
+.submenu {
+  background-color: #f08080;
+}
+
 // Card-Presentacion
 .cardprint {
   width: 100%;
+  height: auto;
+  object-fit: scale-down;
+  background-color: #f08080;
 
-  .carduno {
-    width: 100%;
-    height: auto;
+  .contP {
+    max-height: 650px;
+    object-fit: scale-down;
+    overflow-y: scroll;
   }
 
   .imgPresent {
     width: 100%;
     padding: 10px;
-
     justify-content: center;
+    object-fit: scale-down;
   }
 }
 
-//GALERIA
+// GALERIA
 // Formato de imagenes
 
 .erikaSecImag div img {
@@ -201,26 +210,6 @@ thead tr th {
 
 .contenido1 {
   background-color: rgb(255, 218, 185);
-}
-/*CONTACTO */
-// Bordes formulario
-
-#formulario {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#formulario form fieldset {
-  border-style: dashed;
-  border-color: DimGray;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  padding: $relleno;
-  margin: $margen * 2;
 }
 
 /* formato Footer */

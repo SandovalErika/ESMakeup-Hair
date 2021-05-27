@@ -98,6 +98,7 @@ h2 {
   width: 100%;
   background: url(../images/fondo_slider.png) no-repeat center;
   background-size: 1150px auto;
+  background-size: cover;
 }
 
 .slider-2 img {
@@ -107,6 +108,7 @@ h2 {
   width: 100%;
   background: url(../images/fondo_slider.png) no-repeat center;
   background-size: 1150px auto;
+  background-size: cover;
 }
 
 .slider-3 img {
@@ -116,6 +118,7 @@ h2 {
   width: 100%;
   background: url(../images/fondo_slider.png) no-repeat center;
   background-size: 1150px auto;
+  background-size: cover;
 }
 
 .navegador {
@@ -130,13 +133,23 @@ h2 {
   background-color: #f08080;
 }
 
-.cardprint {
-  width: 100%;
+.submenu {
+  background-color: #f08080;
 }
 
-.cardprint .carduno {
+.cardprint {
   width: 100%;
   height: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  background-color: #f08080;
+}
+
+.cardprint .contP {
+  max-height: 650px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  overflow-y: scroll;
 }
 
 .cardprint .imgPresent {
@@ -145,6 +158,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .erikaSecImag div img {
@@ -192,36 +207,6 @@ thead tr th {
 
 .contenido1 {
   background-color: peachpuff;
-}
-
-/*CONTACTO */
-#formulario {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#formulario form fieldset {
-  border-style: dashed;
-  border-color: DimGray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  padding: 20px;
-  margin: 20px;
 }
 
 /* formato Footer */

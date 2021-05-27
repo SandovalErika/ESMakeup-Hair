@@ -55,7 +55,7 @@
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Productos y Servicios
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html">Productos y Servicios</a></li>
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Maquillaje</a></li>
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#peinado">Peinado</a></li>
@@ -87,65 +87,90 @@
             <!-- Formulario -->
             <!-- Seccion 3 -->
 
-            <section id="formulario">
-                <form action=" ">
-
-                    <fieldset>
-                        <div>
-                            <label>Nombre</label>
-                            <input type="text">
-                        </div><br>
-
-                        <div>
-                            <label>Email</label>
-                            <input type="email">
-                        </div><br>
-
-                        <div>
-                            <label>Telefono</label>
-                            <input type="text">
-                        </div><br>
-
-                        <div>
-                            <label>Evento</label>
-                            <select name="Evento">
-                                <option value="Seleccione...">Seleccione...</option>
-                                <option value="Quinceañera">Quinceañera</option>
-                                <option value="Egresada">Egresada</option>
-                                <option value="Novia">Novia</option>
-                                <option value="Madrina">Madrina</option>
-                                <option value="Otro">Otro</option>
-
-                            </select>
-                        </div><br>
-
-                        <!-- checkbox -->
-                        <div>
-                            <label>Quiero recibir informacion de:</label><br>
-
-                            <input type="checkbox">
-                            <label>Maquillaje</label><br>
-                            <input type="checkbox">
-                            <label>Peinado</label><br>
-                            <input type="checkbox">
-                            <label>Ambas cosas</label><br>
-                            <input type="checkbox">
-                            <label>Otros servicios</label>
-                        </div><br>
-
-                        <div>
-                            <label>Escribe un comentario:</label><br>
-
-                            <textarea name="Area de tecto" id="" cols="30" rows="10"></textarea><br>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for=" " class="col-form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
                         </div>
-
-                        <!-- Botones -->
-                        <div>
-                            <input type="reset" value="Borrar">
-                            <input type="submit" value="Enviar">
+                        <div class="col">
+                            <label for=" " class="col-form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
                         </div>
-                    </fieldset>
-                </form><br><br>
+                    </div>
+            
+                    <div class="col mb-3 mt-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-12">
+                            <input type="email" class="form-control" id="colFormLabel" placeholder="Email">
+                        </div>
+                    </div>
+            
+                    <div class="col mb-3 mt-3">
+                        <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
+                        <div class="col-sm-12">
+                            <input type="number" class="form-control" id="colFormLabel" placeholder="Telefono o Celular">
+                        </div>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="disabledSelect" class="form-label">Evento</label>
+                        <select id="disabledSelect" class="form-select">
+                            <option>Seleccione...</option>
+                            <option>Quinceañera</option>
+                            <option>Egresada</option>
+                            <option>Novia</option>
+                            <option>Madrina</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+            
+                    <div>
+                        <label for="colFormLabel" class=" col-form-label">Quiero recibir información de:</label>
+                    </div>
+                    <div class="form-check d-flex flex-column">
+            
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Maquillaje
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Peinado
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Maquillaje y Peinado
+                            </label>
+                        </div>
+                        <div>
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Otro servicio
+                            </label>
+                        </div>
+            
+                    </div>
+                    <div class="row">
+                        <label for=" " class="col-form-label">Comentarios:</label>
+            
+                        <textarea class=" colFormLabel mb-3" name=" " id="" cols="10" rows="10" class="form-control"
+                            placeholder="Escribe un comentario" aria-label="textarea"></textarea>
+                    </div>
+            
+                    <div class="row-auto">
+                        <button type="submit" class="ms-3 me-3 btn btn-primary">Enviar</button>
+                        <button type="reset" class="ms-3 me-3 btn btn-primary">Borrar</button>
+                    </div>
+            
+            
+                </div>
             </section>
         </div>
 
@@ -167,16 +192,16 @@
                 <div class="d-flex flex-row-reverse align-items-end">
                     <div class="p-2 bd-highlight"> <a
                             href="https://www.facebook.com/erikasandoval_makeup-109898917352235/" target="_blank"><img
-                                src="/images/facebook.svg" alt="Facebook" width="50px" height="50px"></a>
+                                src="../images/facebook.svg" alt="Facebook" width="50px" height="50px"></a>
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://www.instagram.com/erikasandoval_makeup" target="_blank"><img
-                                src="/images/instagram.svg" alt="Instragram" width="50px" height="50px"></a>
+                                src="../images/instagram.svg" alt="Instragram" width="50px" height="50px"></a>
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://api.whatsapp.com/send?phone=5493513483389&text=Quiero+m%EF%BF%BDs+informacion"
                             tabindex="_blank">
-                            <img class="rounded-3" src="/images/whatsapp.svg" alt="whatsapp" width="50px"
+                            <img class="rounded-3" src="../images/whatsapp.svg" alt="whatsapp" width="50px"
                                 height="50px"></a>
                     </div>
                 </div>
