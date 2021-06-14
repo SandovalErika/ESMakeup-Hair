@@ -300,15 +300,9 @@ $titulos: (
 
 .erikaSecImag .galeria .galeria1 div:hover {
   cursor: pointer;
-  transform: scale(2);
-}
-.img4:hover {
-  filter: none;
+  transform: scale(1.5);
 }
 
-.img4 {
-  filter: sepia();
-}
 // PRODUCTOS Y SERVICIOS
 // Formato en tabla
 
@@ -317,36 +311,11 @@ $titulos: (
   list-style-type: none;
 }
 
-tbody td {
-  padding: 10px;
-  text-align: left;
-}
-
 .iconoTabla {
   border: 1px solid #ddd;
   width: 50px;
 }
 
-.encabezadosTabla {
-  color: black;
-  text-align: left;
-}
-
-thead tr th {
-  padding: 0 10px;
-  text-decoration: underline;
-}
-
-.contenido1 {
-  background-color: rgb(255, 218, 185);
-}
-
-.servicios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .acord {
   background-color: #f08080;
 }
@@ -356,7 +325,7 @@ thead tr th {
   font-size: 20px;
   text-decoration: underline;
   letter-spacing: 2px;
-  background-color: rgb(255, 218, 185);
+  background-color: #f08080;
 }
 
 // TUTORIALES
@@ -365,6 +334,7 @@ thead tr th {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20%;
 }
 
 .iframetut1 {
@@ -377,10 +347,8 @@ thead tr th {
   display: flex;
   align-items: center;
   text-align: center;
-  h5 {
-    text-decoration: overline;
-  }
 }
+
 .seccion2 > p {
   font-size: 20px;
 }
