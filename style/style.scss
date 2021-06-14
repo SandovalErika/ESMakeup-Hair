@@ -139,7 +139,7 @@ $titulos: (
 // Navegador
 
 .navegador {
-  background-color: transparent !important;
+  background-color: rgba(225, 225, 225, 0.8);
 }
 
 .opcNav {
@@ -148,10 +148,17 @@ $titulos: (
   font-size: 18px;
   letter-spacing: 3px;
   background-color: #f08080;
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px #333;
 }
 
 .submenu {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 3px;
   background-color: #f08080;
+  color: black;
 }
 
 .margen {
@@ -161,7 +168,6 @@ $titulos: (
 // Card-Presentacion
 .cardprint {
   height: auto;
-  // object-fit: scale-down;
   background-color: #f08080;
   display: flex;
   align-items: center;
@@ -290,7 +296,7 @@ $titulos: (
 // Formato de imagenes
 
 .erikaSecImag div img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
