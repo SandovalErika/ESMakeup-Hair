@@ -41,7 +41,7 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark navegador">
                 <div class="container-fluid">
-                    <img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px">
+                    <a href="../index.html"><img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px"></a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0 opcNav">
                             <li class="nav-item">
@@ -57,12 +57,8 @@
                                 </a>
                                 <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html">Productos y Servicios</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Maquillaje</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#peinado">Peinado</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#pestañas">Otros servicios</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Preguntas Frecuentes</a></li>
+                                    
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -81,7 +77,7 @@
             </nav>
         </div>
 
-        <h2>Contacto</h2>
+        <h2 class="h2">Contacto</h2>
         <div class="p-5 contenido">
 
             <!-- Formulario -->
@@ -89,87 +85,89 @@
 
             <section>
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <label for=" " class="col-form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                    <div class="d-flex flex-row flex-wrap ">
+                        <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 form0">
+                            <div class="form">
+                                <div>
+                                    <div class="col">
+                                        <label class="col-form-label">Nombre</label>
+                                        <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                                    </div>
+                                    <div>
+                                        <label class="col-form-label">Apellido</label>
+                                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="colFormLabel" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
+                                    <div class="col-sm-12">
+                                        <input type="number" class="form-control" id="colFormLabel" placeholder="Telefono o Celular">
+                                    </div>
+                                </div>
+                                <div >
+                                    <label for="disabledSelect" class="form-label">Evento</label>
+                                    <select id="disabledSelect" class="form-select">
+                                        <option>Seleccione...</option>
+                                        <option>Quinceañera</option>
+                                        <option>Egresada</option>
+                                        <option>Novia</option>
+                                        <option>Madrina</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="colFormLabel" class=" col-form-label">Quiero recibir información de:</label>
+                                </div>
+                                <div class="form-check d-flex flex-column">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Maquillaje
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Peinado
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Maquillaje y Peinado
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                        <label class="form-check-label" for="gridCheck1">
+                                            Otro servicio
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-form-label">Comentarios:</label>
+                                    <textarea class=" colFormLabel mb-2 text" class="form-control"
+                                        placeholder="Escribe un comentario" aria-label="textarea">Comentario </textarea>
+                                </div>
+                                <div class="row-auto">
+                                    <button type="submit" class="ms-3 me-3 btn btn-primary">Enviar</button>
+                                    <button type="reset" class="ms-3 me-3 btn btn-primary">Borrar</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col">
-                            <label for=" " class="col-form-label">Apellido</label>
-                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                        <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 contiframe">
+                            <iframe class="iframemaps pe-5 ps-5"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.111578058293!2d-64.21376808572171!3d-31.41105178140585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432989bc63686f9%3A0x635de4c7a97e60d5!2sDuarte%20Quir%C3%B3s%202055%2C%20X5002AOE%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1623597079657!5m2!1ses!2sar"
+                                style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
                         </div>
                     </div>
-            
-                    <div class="col mb-3 mt-3">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
-                        <div class="col-sm-12">
-                            <input type="email" class="form-control" id="colFormLabel" placeholder="Email">
-                        </div>
-                    </div>
-            
-                    <div class="col mb-3 mt-3">
-                        <label for="colFormLabel" class="col-sm-2 col-form-label">Teléfono</label>
-                        <div class="col-sm-12">
-                            <input type="number" class="form-control" id="colFormLabel" placeholder="Telefono o Celular">
-                        </div>
-                    </div>
-            
-                    <div class="mb-3">
-                        <label for="disabledSelect" class="form-label">Evento</label>
-                        <select id="disabledSelect" class="form-select">
-                            <option>Seleccione...</option>
-                            <option>Quinceañera</option>
-                            <option>Egresada</option>
-                            <option>Novia</option>
-                            <option>Madrina</option>
-                            <option>Otro</option>
-                        </select>
-                    </div>
-            
-                    <div>
-                        <label for="colFormLabel" class=" col-form-label">Quiero recibir información de:</label>
-                    </div>
-                    <div class="form-check d-flex flex-column">
-            
-                        <div>
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Maquillaje
-                            </label>
-                        </div>
-                        <div>
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Peinado
-                            </label>
-                        </div>
-                        <div>
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Maquillaje y Peinado
-                            </label>
-                        </div>
-                        <div>
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Otro servicio
-                            </label>
-                        </div>
-            
-                    </div>
-                    <div class="row">
-                        <label for=" " class="col-form-label">Comentarios:</label>
-            
-                        <textarea class=" colFormLabel mb-3" name=" " id="" cols="10" rows="10" class="form-control"
-                            placeholder="Escribe un comentario" aria-label="textarea"></textarea>
-                    </div>
-            
-                    <div class="row-auto">
-                        <button type="submit" class="ms-3 me-3 btn btn-primary">Enviar</button>
-                        <button type="reset" class="ms-3 me-3 btn btn-primary">Borrar</button>
-                    </div>
-            
-            
                 </div>
             </section>
         </div>
@@ -184,10 +182,10 @@
                     <a href="https://www.lidherma.com/inicio.html" target="_blank">Lidherma</a><br><br>
 
                     <h4 class="seccion4__titulo">Contacto</h4>
-                    <p> <span> Mail:</span> erikasandoval-09@hotmail.com</p>
-                    <p><span> Celular:</span> (0351) 153483389</p>
-                    <p><span>Instagram:</span> erikasandoval_makeup</p>
-                    <p><span>Facebook:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span> Mail:</span> erikasandoval-09@hotmail.com</p>
+                    <p class="seccion4__cont"><span> Celular:</span> (0351) 153483389</p>
+                    <p class="seccion4__cont"><span>Instagram:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span>Facebook:</span> erikasandoval_makeup</p>
                 </div>
                 <div class="d-flex flex-row-reverse align-items-end">
                     <div class="p-2 bd-highlight"> <a
@@ -200,7 +198,7 @@
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://api.whatsapp.com/send?phone=5493513483389&text=Quiero+m%EF%BF%BDs+informacion"
-                            tabindex="_blank">
+                            target="_blank">
                             <img class="rounded-3" src="../images/whatsapp.svg" alt="whatsapp" width="50px"
                                 height="50px"></a>
                     </div>

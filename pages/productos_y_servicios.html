@@ -41,7 +41,8 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark navegador">
                 <div class="container-fluid">
-                    <img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px">
+                    <a href="../index.html"><img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px"></a>
+                    
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0 opcNav">
                             <li class="nav-item">
@@ -57,12 +58,8 @@
                                 </a>
                                 <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html">Productos y Servicios</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Maquillaje</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#peinado">Peinado</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#pestañas">Otros servicios</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#collapseOne">Preguntas frecuentes</a></li>
+                                    
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -81,13 +78,13 @@
             </nav>
         </div>
 
-        <h2>Productos y Servicios:</h2>
-        <div class="contenido1 p-5">
-            <!-- Tabla -->
-            <!-- Seccion 2 -->
-            <section>
-
-                <table border="0" cellspacing="3" cellpadding="3">
+        <!-- Tabla -->
+        <!-- Seccion 2 -->
+        <h2 class="h2">Productos y Servicios:</h2>
+        <div class="container contenido1 ">
+            
+            <section class="d-flex flex-column pt-2">
+                <table border="1" cellspacing="3" cellpadding="3">
                     <thead class="encabezadosTabla">
                         <tr>
                             <th> </th>
@@ -97,7 +94,7 @@
                     </thead>
 
                     <tbody>
-                        <td><img class="iconoTabla" src="/images/icon_lidherma.jpg" alt="Lidherma"><br> Lidherma</td>
+                        <td class="servicios"><img class="iconoTabla" src="/images/icon_lidherma.jpg" alt="Lidherma"><br> Lidherma</td>
                         <td>
                             <ul class="listaTabla">
                                 <li>Rostro</li>
@@ -110,9 +107,9 @@
                     </tbody>
 
                     <tbody>
-                        <td><img class="iconoTabla" src="/images/icon_maq&pein2.png" alt="Maquillaje & Peinado"><br>
-                            Maquillaje
-                            y/o Peinado</td>
+                        <td class="servicios"><img class="iconoTabla" src="../images/icon_maq&pein2.png" alt="Maquillaje & Peinado"><br>
+                            Maquillaje <br>
+                            Peinado</td>
                         <td>
                             <ul class="listaTabla">
                                 <li>Quinceañeras</li>
@@ -131,7 +128,7 @@
                     </tbody>
 
                     <tbody>
-                        <td><img class="iconoTabla" src="/images/icon_pest.png" alt="Pestañas"><br> Pestañas
+                        <td class="servicios"><img class="iconoTabla" src="../images/icon_pest.png" alt="Pestañas"><br> Pestañas
                         </td>
                         <td>
                             <ul class="listaTabla">
@@ -141,110 +138,174 @@
                         </td>
                         <td>Un tratamiento para tus pestañas naturales sin dañarlas.</td>
                     </tbody>
+                    <tbody>
+                        <td class="servicios"><img class="iconoTabla" src="../images/uñas.jpg" alt="Uñas"><br> Uñas</td>
+                        <td>
+                            <ul class="listaTabla">
+                                <li>Esmaltado Semipermanente</li>
+                                <li>Uñas Esculpidas</li>
+                                <li>Esculpidas Acrygel</li>
+                                <li>Manicuría</li>
+                            </ul>
+                        </td>
+                        <td> 
+                            <h4> <span class="badge bg-secondary">Proximamente...</span></h4>
+                        </td>
+                    </tbody>
                 </table>
             </section>
 
             <!-- Contenido -->
             <!-- Seccion 3 -->
-            <section class="cont" id="contenido">
-                <div class="servicios cont__1">
-                    <h2 class="cont__2" id="maquillaje">Maquillaje</h2><br>
-                    <p class="cont__3">
-                        <span class="cont__4"> ¿Para que tipo de eventos es el servicio de maquillaje? </span><br>
-                        Para todo tipo de eventos: quinceañeras, egresadas, novias, madrinas, producciones, television,
-                        y/o cualquier otro. <br><br>
-                        <span class="cont__4"> ¿Debo sacar turno? </span><br>
-                        Por supuesto. Es recomendable que con 6 meses como minimo de anticipación reserves un turno para
-                        el día del evento más si hay prueba de maquillaje que se realiza un mes antes del evento.
-                        De igual modo, si el servicio es para varias personas. Todas con turno para asignar
-                        horarios.<br><br>
-                        <span class="cont__4"> ¿Como sé que voy a estar conforme con el resultado? </span><br>
-                        Para asegurarme de ello, me encargo de realizarte una serie de preguntas claves para conocerte
-                        mejor:
-                        -¿Cuales son los productos de maquillaje que generalmente usas en tu rutina diaria?
-                        -¿Que queres lograr?
-                        -¿Cuales son los cambios máximos que estas dispuesta/o a tolerar?
-                        -¿Que vestuario vas a usar el día del evento?
-                        De acuerdo a tus respuestas, se realizará un trabajo 100% a tu perfil resaltando al máximo tu
-                        belleza y que puedas sentirte cómoda y satisfecha. <br><br>
-                        <span class="cont__4"> ¿Es importante la prueba de maquillaje? </span> <br>
-                        Por supuesto, con una prueba de maquillaje realizo estilos distintos de make up de acuerdo a tus
-                        preferencias y elegis el que más te gusta!! Muy importante, con la prueba vas a saber cuanto te
-                        dura el maquillaje y la calidad de los productos. <br><br>
-                        <span class="cont__4"> ¿Que incluye el servicio? </span><br>
-                        En primera instancia se analiza tu tipo de piel. De acuerdo a ello, se prepara la piel para
-                        recibir el maquillaje. Se colocan productos de primera calidad que garantizan un resultado
-                        incleible. <br><br>
-                        <span class="cont__4"> ¿Cual es el costo de maquillaje? </span> <br>
-                        El costo depende del make up elegido más el costo de traslado. <br><br>
-                        <span class="cont__4"> ¿El costo de traslado de que depende? </span> <br>
-                        Depende de la distancia que deba recorrer desde mi domicilio hasta el lugar del evento y del
-                        costo de transporte empleado. <br><br>
-                        <span class="cont__4"> ¿Hay promociones en make up? </span> <br>
-                        Claro que si! Si queres el servicio solo para vos, te puedo ofrecer un combo de make up con
-                        peinado a un precio accesible que si lo hicieras por separado. Y si decidís probar el servicio
-                        con alguien más, de acuerdo a la cantidad de personas que se sumen realizo un precio super
-                        conveniente. <br><br>
-                        <span class="cont__4"> ¿La prueba de maquillaje está incluido en el servicio?</span> <br>
-                        No, solo make up. Al igual que en el día del evento, el servicio es completo como si fuera ese
-                        día, con la colocación de todos los productos para que puedas estar impecable todo el evento.
-                        <br><br>
-                        <span class="cont__4"> ¿Puedo hacerme make up sin prueba de maquillaje?</span> <br>
-                        Claro que si! Pero no es lo recomendable cuando se trata de eventos sociales.
-                        <br><br><br>
-                    </p>
 
-                    <h2 id="peinado">Peinado</h2><br>
-                    <p><span class="cont__4"> ¿Trabajas con todo tipo de cabello?</span><br>
-                        Si, mi objetivo que lograr un peinado que se ajuste al make up elegido. Es independiente del
-                        tipo y largo de cabello que tengas. <br><br>
-                        <span class="cont__4"> ¿Realizas prueba de peinado?</span><br>
-                        Seguro. Al igual que el make up, es indispensable saber el resultado de antemano. Para
-                        garantizar un peinado durarero es primordial colocar productos que se adapten a tu tipo de
-                        cabello, teniendo en cuenta la cantidad,grosor y largo. <br><br>
-                        <span class="cont__4"> ¿Ofreces solo servicio de peinado?</span><br>
-                        Claro que si. Lo unico necesito que se coordine con la persona que realice la prueba de make up
-                        para hacerlo en ese mismo momento. <br><br>
-                        <span class="cont__4"> ¿Cual es el costo del peinado?</span><br>
-                        Depende del estilo que elijas más el costo del traslado. <br><br>
-                        <span class="cont__4"> ¿Hay promociones disponibles?</span><br>
-                        Al igual que en el servicio de make up, si es solo para vos te solo para vos, te puedo ofrecer
-                        un combo de make up con peinado a un precio accesible que si lo hicieras por separado. Y si
-                        decidís probar el servicio con alguien más, de acuerdo a la cantidad de personas que se sumen
-                        realizo un precio super conveniente.
-                        <br><br><br><br><br><br>
-                    </p>
-                    <h2 id="pestañas">Pestañas</h2><br>
-                    <p>
-                        <span class="cont__4"> ¿Que trabajos se realizan en pestañas?</span><br>
-                        En pestañas hay dos opciones:
-                        La permanente de pestañas. Levanta las pestañas en forma de curva, la cual da una apariencia
-                        super natural con respecto a aquellas personas que ya tienen las pestañas arqueadas.
-                        El lifting de pestañas levanta las pestañas de raiz a puntas sin una curva tan pronunciada como
-                        la permanente.
-                        De esta manera se obtiene una apariencia de pestañas mas largas.
-                        Tanto la permanente como el lifting se someten a un tinte del color que prefieras para que se
-                        destaquen al maximo y puedas lucir una hermosas pestañas. <br><br>
-                        <span class="cont__4"> ¿Tengo pestañas muy cortitas? ¿Puedo hacerme estos trabajos?</span><br>
-                        Para este tipo de pestañas el lifting es lo mas recomendable.
-                        ¿Cuantos dias duran?
-                        El tratamiento dura unos 60 días de acuerdo al cuidado de las mismas y el cambio de pelo de tus
-                        pestañas. En el ciclo natural, las pestañas caen dando lugar a la nueva pestaña, este en su
-                        forma y largo natural. <br><br>
-                        <span class="cont__4"> ¿Es perjudicial los productos?</span><br>
-                        Al tratarse de un zona tan importante como los ojos, se toman las maximas precauciones para que
-                        el producto no tome contacto interno. <br><br><br><br><br><br>
-                    </p>
-                    <h2>Productos</h2><br>
-                    Ofrezco una línea completa de productos donde podrás recibir asesoramiento sobre cual es el mas
-                    conveniente para vos. Se tiene en cuenta el tipo de piel, y en base a ello armamos una rutina diaria
-                    y/o que producto especifico necesitas para limpiar, restaurar y mantener tu piel. Por último, cuenta
-                    con una linea de maquillaje de excelente calidad y duracion para usarlo en cualquier ocasión. <br>
-                    Si queres mas informacion no dudes en contactarme!!!!. <br>
+            <h2 class="h2">Preguntas frecuentes</h2>
+
+            <section class="cont pb-2" id="contenido">
+                
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item acord">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button nombreAcord" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Maquillaje
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="cont__3">
+                                    <span class="cont__4"> ¿Para que tipo de eventos es el servicio de maquillaje? </span><br>
+                                    Para todo tipo de eventos: quinceañeras, egresadas, novias, madrinas, producciones, television,
+                                    y/o cualquier otro. <br><br>
+                                    <span class="cont__4"> ¿Debo sacar turno? </span><br>
+                                    Por supuesto. Es recomendable que con 6 meses como minimo de anticipación reserves un turno para
+                                    el día del evento más si hay prueba de maquillaje que se realiza un mes antes del evento.
+                                    De igual modo, si el servicio es para varias personas. Todas con turno para asignar
+                                    horarios.<br><br>
+                                    <span class="cont__4"> ¿Como sé que voy a estar conforme con el resultado? </span><br>
+                                    Para asegurarme de ello, me encargo de realizarte una serie de preguntas claves para conocerte
+                                    mejor:
+                                    -¿Cuales son los productos de maquillaje que generalmente usas en tu rutina diaria?
+                                    -¿Que queres lograr?
+                                    -¿Cuales son los cambios máximos que estas dispuesta/o a tolerar?
+                                    -¿Que vestuario vas a usar el día del evento?
+                                    De acuerdo a tus respuestas, se realizará un trabajo 100% a tu perfil resaltando al máximo tu
+                                    belleza y que puedas sentirte cómoda y satisfecha. <br><br>
+                                    <span class="cont__4"> ¿Es importante la prueba de maquillaje? </span> <br>
+                                    Por supuesto, con una prueba de maquillaje realizo estilos distintos de make up de acuerdo a tus
+                                    preferencias y elegis el que más te gusta!! Muy importante, con la prueba vas a saber cuanto te
+                                    dura el maquillaje y la calidad de los productos. <br><br>
+                                    <span class="cont__4"> ¿Que incluye el servicio? </span><br>
+                                    En primera instancia se analiza tu tipo de piel. De acuerdo a ello, se prepara la piel para
+                                    recibir el maquillaje. Se colocan productos de primera calidad que garantizan un resultado
+                                    incleible. <br><br>
+                                    <span class="cont__4"> ¿Cual es el costo de maquillaje? </span> <br>
+                                    El costo depende del make up elegido más el costo de traslado. <br><br>
+                                    <span class="cont__4"> ¿El costo de traslado de que depende? </span> <br>
+                                    Depende de la distancia que deba recorrer desde mi domicilio hasta el lugar del evento y del
+                                    costo de transporte empleado. <br><br>
+                                    <span class="cont__4"> ¿Hay promociones en make up? </span> <br>
+                                    Claro que si! Si queres el servicio solo para vos, te puedo ofrecer un combo de make up con
+                                    peinado a un precio accesible que si lo hicieras por separado. Y si decidís probar el servicio
+                                    con alguien más, de acuerdo a la cantidad de personas que se sumen realizo un precio super
+                                    conveniente. <br><br>
+                                    <span class="cont__4"> ¿La prueba de maquillaje está incluido en el servicio?</span> <br>
+                                    No, solo make up. Al igual que en el día del evento, el servicio es completo como si fuera ese
+                                    día, con la colocación de todos los productos para que puedas estar impecable todo el evento.
+                                    <br><br>
+                                    <span class="cont__4"> ¿Puedo hacerme make up sin prueba de maquillaje?</span> <br>
+                                    Claro que si! Pero no es lo recomendable cuando se trata de eventos sociales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acord">
+                        <h2 class="accordion-header " id="headingTwo">
+                            <button class="accordion-button collapsed nombreAcord" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Peinado
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="cont__3"><span class="cont__4"> ¿Trabajas con     todo tipo de cabello?</span><br>
+                                    Si, mi objetivo que lograr un peinado que se ajuste al make up elegido. Es independiente del
+                                    tipo y largo de cabello que tengas. <br><br>
+                                    <span class="cont__4"> ¿Realizas prueba de peinado?</span><br>
+                                    Seguro. Al igual que el make up, es indispensable saber el resultado de antemano. Para
+                                    garantizar un peinado durarero es primordial colocar productos que se adapten a tu tipo de
+                                    cabello, teniendo en cuenta la cantidad,grosor y largo. <br><br>
+                                    <span class="cont__4"> ¿Ofreces solo servicio de peinado?</span><br>
+                                    Claro que si. Lo unico necesito que se coordine con la persona que realice la prueba de make up
+                                    para hacerlo en ese mismo momento. <br><br>
+                                    <span class="cont__4"> ¿Cual es el costo del peinado?</span><br>
+                                    Depende del estilo que elijas más el costo del traslado. <br><br>
+                                    <span class="cont__4"> ¿Hay promociones disponibles?</span><br>
+                                    Al igual que en el servicio de make up, si es solo para vos te solo para vos, te puedo ofrecer
+                                    un combo de make up con peinado a un precio accesible que si lo hicieras por separado. Y si
+                                    decidís probar el servicio con alguien más, de acuerdo a la cantidad de personas que se sumen
+                                    realizo un precio super conveniente.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acord">
+                        <h2 class="accordion-header " id="headingThree">
+                            <button class="accordion-button collapsed nombreAcord" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Pestañas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="cont__3">
+                                    <span class="cont__4"> ¿Que trabajos se realizan en pestañas?</span><br>
+                                    En pestañas hay dos opciones:
+                                    La permanente de pestañas. Levanta las pestañas en forma de curva, la cual da una apariencia
+                                    super natural con respecto a aquellas personas que ya tienen las pestañas arqueadas.
+                                    El lifting de pestañas levanta las pestañas de raiz a puntas sin una curva tan pronunciada como
+                                    la permanente.
+                                    De esta manera se obtiene una apariencia de pestañas mas largas.
+                                    Tanto la permanente como el lifting se someten a un tinte del color que prefieras para que se
+                                    destaquen al maximo y puedas lucir una hermosas pestañas. <br><br>
+                                    <span class="cont__4"> ¿Tengo pestañas muy cortitas? ¿Puedo hacerme estos trabajos?</span><br>
+                                    Para este tipo de pestañas el lifting es lo mas recomendable.
+                                    ¿Cuantos dias duran?
+                                    El tratamiento dura unos 60 días de acuerdo al cuidado de las mismas y el cambio de pelo de tus
+                                    pestañas. En el ciclo natural, las pestañas caen dando lugar a la nueva pestaña, este en su
+                                    forma y largo natural. <br><br>
+                                    <span class="cont__4"> ¿Es perjudicial los productos?</span><br>
+                                    Al tratarse de un zona tan importante como los ojos, se toman las maximas precauciones para que
+                                    el producto no tome contacto interno. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item acord">
+                        <h2 class="accordion-header acordion1 " id="headingFour">
+                            <button class="accordion-button nombreAcord" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="true" aria-controls="collapseFour">
+                                Productos
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="cont__3"> Ofrezco una línea completa de productos donde podrás recibir asesoramiento sobre cual es el mas
+                                    conveniente para vos. Se tiene en cuenta el tipo de piel, y en base a ello armamos una rutina diaria
+                                    y/o que producto especifico necesitas para limpiar, restaurar y mantener tu piel. Por último, cuenta
+                                    con una linea de maquillaje de excelente calidad y duracion para usarlo en cualquier ocasión. <br>
+                                    Si queres mas informacion no dudes en contactarme!!!!. <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-
+        
         <!-- FOOTER -->
         <!-- Seccion 4 -->
         <section class="seccion4" id="footer">
@@ -255,10 +316,10 @@
                     <a href="https://www.lidherma.com/inicio.html" target="_blank">Lidherma</a><br><br>
 
                     <h4 class="seccion4__titulo">Contacto</h4>
-                    <p> <span> Mail:</span> erikasandoval-09@hotmail.com</p>
-                    <p><span> Celular:</span> (0351) 153483389</p>
-                    <p><span>Instagram:</span> erikasandoval_makeup</p>
-                    <p><span>Facebook:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span> Mail:</span> erikasandoval-09@hotmail.com</p>
+                    <p class="seccion4__cont"><span> Celular:</span> (0351) 153483389</p>
+                    <p class="seccion4__cont"><span>Instagram:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span>Facebook:</span> erikasandoval_makeup</p>
                 </div>
                 <div class="d-flex flex-row-reverse align-items-end">
                     <div class="p-2 bd-highlight"> <a
@@ -271,7 +332,7 @@
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://api.whatsapp.com/send?phone=5493513483389&text=Quiero+m%EF%BF%BDs+informacion"
-                            tabindex="_blank">
+                            target="_blank">
                             <img class="rounded-3" src="../images/whatsapp.svg" alt="whatsapp" width="50px"
                                 height="50px"></a>
                     </div>

@@ -41,7 +41,7 @@
         <div class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-dark navegador">
                 <div class="container-fluid">
-                    <img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px">
+                    <a href="../index.html"><img class="margen" src="../images/logo.png" alt="Logo" width="90px" height="90px"></a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0 opcNav">
                             <li class="nav-item">
@@ -57,12 +57,8 @@
                                 </a>
                                 <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../pages/productos_y_servicios.html">Productos y Servicios</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Maquillaje</a></li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#peinado">Peinado</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#pestañas">Otros servicios</a></li>
+                                    <li><a class="dropdown-item" href="../pages/productos_y_servicios.html#maquillaje">Preguntas frecuentes</a></li>
+                                   
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -81,22 +77,77 @@
             </nav>
         </div>
 
-        <h2>Tutoriales</h2>
+        <h2 class="h2">Tutoriales</h2>
         <div class="p-5 contenido">
             <!-- Contenido -->
             <!-- Seccion 2 -->
-            <section>
+            <section class="seccion2">
                 <p>En esta sección podrás ver tutoriales de diversas tecnicas de
                     maquillaje, peinados,
                     tendencias del momento, materiales y productos que no pueden faltarte en tu maletín y bioseguridad
                     necesaria
-                    para cumplir con los protocolos del covid-19.</p><br>
-
-                <iframe width="500" height="315" src="https://www.youtube.com/embed/Hy99NU27MTo"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </section><br><br>
+                    para cumplir con los protocolos del covid-19.
+                </p>
+                <div class="d-flex flex-column iframetut mt-5">
+                    <div class="card mb-3" style="max-width: 1000px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <iframe class="iframetut1" src="https://www.youtube.com/embed/Hy99NU27MTo" title="YouTube video player"
+                                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            </div>
+                            <div class="col-md-8 cardtut1">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Tendencias de Maquillaje</h5>
+                                    <p class="card-text ">En este video podrás conocer las últimas tendencias llevadas a cabo en el 2021.</p>
+                                    <p class="card-text"><small class="text-muted">Última actualización hace 7 días</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column iframetut mt-5">
+                    <div class="card mb-3" style="max-width: 1000px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <iframe class="iframetut1" src="https://www.youtube.com/embed/DT3mz0gQR-8" title="YouTube video player"
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="col-md-8 cardtut1">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Maquillaje que envejecen</h5>
+                                    <p class="card-text ">¿Alguna vez te has visto en el espejo y notaste que tu make up te suma años de más? <br> Bueno, este video es esencial para aquellas personas que cometen estos típicos errores a la hora de maquillarse. </p>
+                                    <p class="card-text"><small class="text-muted">Última actualización hace 3 días</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column iframetut mt-5">
+                    <div class="card mb-3" style="max-width: 1000px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <iframe class="iframetut1" src="https://www.youtube.com/embed/sAcyodbMnpU" title="YouTube video player"
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-8 cardtut1">
+                                <div class="card-body ">
+                                    <h5 class="card-title">¿Como armo mi maletín de maquillaje?</h5>
+                                    <p class="card-text "> ¿Estás segur@ que tenes todos las herramientas necesarias para tu rutina de makeup diario?
+                                        Te invito a ver este video donde aprenderás lo que no te puede faltar...
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
         </div>
 
         <!-- FOOTER -->
@@ -109,10 +160,10 @@
                     <a href="https://www.lidherma.com/inicio.html" target="_blank">Lidherma</a><br><br>
 
                     <h4 class="seccion4__titulo">Contacto</h4>
-                    <p> <span> Mail:</span> erikasandoval-09@hotmail.com</p>
-                    <p><span> Celular:</span> (0351) 153483389</p>
-                    <p><span>Instagram:</span> erikasandoval_makeup</p>
-                    <p><span>Facebook:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span> Mail:</span> erikasandoval-09@hotmail.com</p>
+                    <p class="seccion4__cont"><span> Celular:</span> (0351) 153483389</p>
+                    <p class="seccion4__cont"><span>Instagram:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span>Facebook:</span> erikasandoval_makeup</p>
                 </div>
                 <div class="d-flex flex-row-reverse align-items-end">
                     <div class="p-2 bd-highlight"> <a
@@ -125,7 +176,7 @@
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://api.whatsapp.com/send?phone=5493513483389&text=Quiero+m%EF%BF%BDs+informacion"
-                            tabindex="_blank">
+                            target="_blank">
                             <img class="rounded-3" src="../images/whatsapp.svg" alt="whatsapp" width="50px"
                                 height="50px"></a>
                     </div>

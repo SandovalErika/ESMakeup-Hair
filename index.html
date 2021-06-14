@@ -61,12 +61,8 @@
                                 </a>
                                 <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="./pages/productos_y_servicios.html">Productos y Servicios</a></li>
-                                    <li><a class="dropdown-item" href="./pages/productos_y_servicios.html#maquillaje">Maquillaje</a></li>
-                                    <li><a class="dropdown-item" href="./pages/productos_y_servicios.html#peinado">Peinado</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="./pages/productos_y_servicios.html#pestañas">Otros servicios</a></li>
+                                    <li><a class="dropdown-item" href="./pages/productos_y_servicios.html#Preguntas">Preguntas frecuentes</a></li>
+                                   
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -88,7 +84,7 @@
 
         <!-- SLIDER -->
         <!-- Seccion 2 -->
-        <section>
+        <section class="mb-2">
             <div class="container">
 
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -105,21 +101,21 @@
                             <img src="./images/slider1.jpeg" class="d-block w-100" alt="Slider 1">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="titulo1">Cut Crease en colores frios</h5>
-                                <p>Ideal para producciones o eventos de noche</p>
+                                
                             </div>
                         </div>
                         <div class="carousel-item slider-2">
                             <img src="./images/slider2.jpeg" class="d-block w-100" alt="Slider 2">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="titulo2">Años 60: Flower Power</h5>
-                                <p>Maquillaje artistico con aplicacion de pétalos de flores.</p>
+                               
                             </div>
                         </div>
                         <div class="carousel-item slider-3">
                             <img src="./images/slider3.jpeg" class="d-block w-100" alt="Slider 3">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5 class="titulo3">Tonos Rosados</h5>
-                                <p>Make up dirigido principalmente a quinceañeras para resaltar su belleza y delicadeza.
+                               
                                 </p>
                             </div>
                         </div>
@@ -139,42 +135,52 @@
 
         <!-- PRESENTACION -->
         <!-- Seccion 3 -->
-        <div class="d-flex flex-row-reverse bd-highlight mt-5 me-5 ms-5">
-
-            <div class=" col-md-4 col-xl-4 col-xxl-4">
-                <div class="card mb-3 cardprint" style="max-width: 500px;">
+        <div class="d-flex flex-row-reverse flex-wrap bd-highlight presentacion">
+            <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4 presentacion">
+                <div class="card mb-3 cardprint" style="max-width: 300px;">
                     <div class="row g-0  carduno">
-                        <div class="col-sm-12 col-md-12 col-xl-5 contImg">
+                        <div class="col-sm-12 col-md-12 col-xl-12 contImg">
                             <img class="imgPresent" src="./images/presentacion_erika.png" alt="Foto Erika Sandoval">
                         </div>
-                        <div class="col-sm-12 col-md-12 col-xl-7 contP">
+                        <div class="col-sm-12 col-md-12 col-xl-12 contP">
                             <div class="card-body">
-                                <h5 class="card-title">Presentacion</h5>
-                                <p class="card-text">Hola! Mi nombre es Erika Sandoval, tengo 29 años y soy maquilladora
-                                    profesional de Arias Bazan
-                                    egresada
-                                    en diciembre de 2020.
-                                    Diseñé este espacio gracias a mis conocimientos de desarrollo web adquiridos en
-                                    "Coder
-                                    House"
-                                    que me
-                                    dieron la posibilidad de exponer mi emprendimiento personal relacionado al mundo del
-                                    maquillaje
-                                    y
-                                    peinado.
-                                    Mi objetivo es que me conozcan, y ofrecerles una amplia gama de productos y
-                                    servicios
-                                    que
-                                    iré
-                                    adicionando con el transcurrir del tiempo.
-                                    Mi finalidad es brindarles una atención personalizada y poder resaltar su belleza
-                                    acompañado
-                                    de
-                                    productos de las mejores marcas del mercado que garantizan calidad y durabilidad.
-                                    Por ello y mucho más...
-                                    <span class="bienvenidos">¡¡BIENVENIDOS!!</span>
-                                </p>
-
+                                <button type="button" class="btn btn-primary boton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Conoceme
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header modalFormat">
+                                                <h5 class="modal-title modalFormat" id="staticBackdropLabel">Presentación</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body modalFormat">
+                                                <p> Hola! Mi nombre es Erika Sandoval, tengo 29 años y soy maquilladora profesional de Arias Bazan egresada en diciembre
+                                                    de 2020. <br>
+                                                    Diseñé este espacio gracias a mis conocimientos de desarrollo web adquiridos en
+                                                    "Coder House que me dieron la posibilidad de exponer mi emprendimiento personal relacionado al mundo del aquillaje y
+                                                    peinado. <br>
+                                                    Mi objetivo es que me conozcan, y ofrecerles una amplia gama de productos y servicios
+                                                    que iré adicionando con el transcurrir del tiempo. <br>
+                                                    Mi finalidad es brindarles una atención personalizada y poder resaltar su belleza
+                                                    acompañado de productos de las mejores marcas del mercado que garantizan calidad y durabilidad. <br>
+                                                    Por ello y mucho más... 
+                                                </p>
+                                                <img class="imgBienvenidos" src="./images/bienvenidos.png" alt="Bienv">   
+                                                <!-- <p class="bienvenidos">¡¡Bienvenidos!!</p> -->
+                                                
+                                            </div>
+                                            <div class="modal-footer modalFormat">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="card-text"></p>
+                            
                             </div>
                         </div>
                     </div>
@@ -182,32 +188,206 @@
             </div>
 
             <!-- ENLACES EN IMAGENES -->
-            <section class="container align-items-center  col-md-8 col-xl-8 col-xxl-8 enlImg">
-
+            <section class="container col-sm-12 col-md-8 col-xl-8 col-xxl-8 mb-2 enlImg">
+              
                 <div class="d-flex flex-row flex-wrap link__2">
-                    <div class="col-sm-12 col-md-6 col-xl-8 col-xxl-6 link__3">
-                        <a class="link__4" href="./pages/galería.html">
+                    <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 link__3">
+                        <a href="./pages/galería.html">
                             <img class="img-fluid link_5 rounded float-end" src="./images/galeria.png"
                                 alt="Galeria"></a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-8 col-xxl-6 link__3">
+                    <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 link__3">
                         <a href="./pages/productos_y_servicios.html">
                             <img class="img-fluid link_5_1 rounded float-start" src="./images/prodyserv.png"
                                 alt="Productos y Servicios"></a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-8 col-xxl-6 link__3">
+                    <div class="col-sm-12 col-md-5 col-xl-6 col-xxl-6 link__3">
                         <a href="./pages/tutoriales.html"> <img class="img-fluid link_5_2 rounded float-end"
                                 src="./images/tutoriales.png" alt="Tutoriales"></a>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-xl-8 col-xxl-6 link__3">
+                    <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6 link__3">
                         <a href="./pages/contacto.html">
                             <img class="img-fluid link_5_3 rounded float-start" src="./images/contacto.png"
                                 alt="Contacto"></a>
                     </div>
                 </div>
-
             </section>
         </div>
+
+        <!-- INFORMACION GENERAL- MEDIOS DE PAGO- TRABAJO A DOMICILIO- TURNOS -->
+        <section class="container mb-2 infogral">
+            <div class="row info">
+                <div class=" col-sm-12 col-md-4 col-xl-4 col-xxl-4 ">
+                    <div class="d-flex flex-column border-end info1">
+                        <img width="45px" src="./images/attach_money_white_24dp.svg" alt="icoco medios de pago">
+                        <p>Todos los medios de pago</p>
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-md-4 col-xl-4 col-xxl-4 ">
+                    <div class="d-flex flex-column border-end info1">
+                        <img width="45px" src="./images/home_white_24dp.svg" alt="icono domicilio">
+                        <p>Trabajo a domicilio</p>
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                    <div class="d-flex flex-column info1">
+                        <img width="45px" src="./images/event_white_24dp.svg" alt="icono turnos">
+                        <p>Sistema de Turnos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ICONOS REDONDOS -->
+        <section>
+            <div class="container ">
+                <div class="d-flex flex-row flex-wrap iconred">
+                    <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                        <div class= "card_0">
+                            <div class="card card_1">
+                                <div class="card-body card-1">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card-2">
+                                <!-- Boton Modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#turnos">
+                                    Turnos
+                                </button>
+                    
+                                <!-- Modal -->
+                                <div class="modal fade" id="turnos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header modalturno">
+                                                <h5 class="modal-title" id="turnos">Agenda tu turno</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modalturno">
+                                                <div class="modal-body d-flex flex-row">
+                                                    <select class="form-select m-1 comentario" aria-label="Default select example">
+                                                        <option selected>Dia</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                    <select class="form-select m-1 comentario" aria-label="Default select example">
+                                                        <option selected>Mes</option>
+                                                        <option value="1">Enero</option>
+                                                        <option value="2">Febrero</option>
+                                                        <option value="3">Marzo</option>
+                                                        <option value="4">Abril</option>
+                                                        <option value="5">Mayo</option>
+                                                        <option value="6">Junio</option>
+                                                        <option value="7">Julio</option>
+                                                        <option value="8">Agosto</option>
+                                                        <option value="9">Septiembre</option>
+                                                        <option value="10">Octubre</option>
+                                                        <option value="11">Noviembre</option>
+                                                        <option value="12">Diciembre</option>
+                                                    </select>
+                                                    <select class="form-select m-1 comentario" aria-label="Default select example">
+                                                        <option selected>Año</option>
+                                                        <option value="1">2021</option>
+                                                        <option value="2">2022</option>
+                                                    </select>
+                                                </div>
+                                                <div class="row me-2 ms-2 comentario">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Nombres"
+                                                            aria-label="First name">
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" placeholder="Apellido"
+                                                            aria-label="Last name">
+                                                    </div>
+                                                </div>
+                                                <div class="m-2">
+                                                    <div>
+                                                        <input type="number" class="form-control" placeholder="Teléfono"
+                                                            aria-label="number">
+                                                    </div>
+                    
+                                                </div>
+                                                <div class="form-floating m-2">
+                                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                                        id="floatingTextarea"></textarea>
+                                                    <label class="comentario" for="floatingTextarea">Comentario</label>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="modal-footer modalturno">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-primary">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                        <div class="card_0">
+                            <div class="card card_1">
+                                <div class="card-body card-01">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card-2">
+                                <a href="https://www.lidherma.com/uploads/catalogo/catlogo_lidherma_mayo_20211.pdf" target="_blank"
+                                    class="btn btn-primary">Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                        <div class="card_0">
+                            <div class="card card_1">
+                                <div class="card-body card-001">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card-2">
+                                <a href="https://goo.gl/maps/42NC4ig2hYuxpGhb7" target="_blank" class="btn btn-primary">Ubicación
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
 
 
         <!-- FOOTER -->
@@ -215,15 +395,11 @@
         <section class="seccion4" id="footer">
             <footer class="d-flex flex-row justify-content-between seccion4__footer">
                 <div>
-                    <h4 class="seccion4__titulo">Enlaces Utiles</h4>
-
-                    <a href="https://www.lidherma.com/inicio.html" target="_blank">Lidherma</a><br><br>
-
                     <h4 class="seccion4__titulo">Contacto</h4>
-                    <p> <span> Mail:</span> erikasandoval-09@hotmail.com</p>
-                    <p><span> Celular:</span> (0351) 153483389</p>
-                    <p><span>Instagram:</span> erikasandoval_makeup</p>
-                    <p><span>Facebook:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"> <span> Mail:</span> erikasandoval-09@hotmail.com</p>
+                    <p class="seccion4__cont"><span> Celular:</span> (0351) 153483389</p>
+                    <p class="seccion4__cont"><span>Instagram:</span> erikasandoval_makeup</p>
+                    <p class="seccion4__cont"><span>Facebook:</span> erikasandoval_makeup</p>
                 </div>
                 <div class="d-flex flex-row-reverse align-items-end">
                     <div class="p-2 bd-highlight"> <a
@@ -236,7 +412,7 @@
                     </div>
                     <div class="p-2 bd-highlight">
                         <a href="https://api.whatsapp.com/send?phone=5493513483389&text=Quiero+m%EF%BF%BDs+informacion"
-                            tabindex="_blank">
+                            target="_blank">
                             <img class="rounded-3" src="./images/whatsapp.svg" alt="whatsapp" width="50px"
                                 height="50px"></a>
                     </div>
