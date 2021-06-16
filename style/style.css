@@ -158,6 +158,18 @@
           box-shadow: 5px 5px 10px #333;
 }
 
+.navbar-toggler {
+  background-color: #f08080;
+}
+
+.navbar-toggler:hover {
+  background-color: #808080;
+}
+
+.opcNav li a:hover {
+  background-color: #808080;
+}
+
 .submenu {
   font-family: "Pattaya", sans-serif;
   font-weight: normal;
